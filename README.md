@@ -1,6 +1,6 @@
 # Ascii Art
 
-[Try this project](https://robertheaton.com/2018/06/12/programming-projects-for-advanced-beginners-ascii-art/)
+[Try this project yourself](https://robertheaton.com/2018/06/12/programming-projects-for-advanced-beginners-ascii-art/)
 
 ---
 
