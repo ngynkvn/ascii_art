@@ -21,11 +21,11 @@ struct Opt {
 const BRIGHTNESS: &[u8] = "`^\",:;Il!i~+_-?][}{1)(|\\/tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW&8%B@$".as_bytes();
 const BRIGHTNESS_LEN: f32 = (BRIGHTNESS.len() - 1) as f32;
 fn map_to_text(luminosity: u8) -> char {
-    return BRIGHTNESS[((BRIGHTNESS_LEN / 255.0) * luminosity as f32) as usize ] as char;
+    BRIGHTNESS[((BRIGHTNESS_LEN / 255.0) * luminosity as f32) as usize ] as char
 }
 
 fn get_luminosity<T: Index<usize, Output=u8> + ?Sized>(pixel: &T) -> u8 {
-    return ((u32::from(pixel[0]) + u32::from(pixel[1]) + u32::from(pixel[2])) / 3) as u8;
+    ((u32::from(pixel[0]) + u32::from(pixel[1]) + u32::from(pixel[2])) / 3) as u8
 }
 
 fn invert(value: u8) -> u8 {
