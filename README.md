@@ -4,4 +4,4 @@
 
 ---
 
-<img src="images/image.png" style="display:block;margin:0 auto" width=300px/>
+<img src="images/image.png" style="display:block;margin:0 auto" width=700px/>
